@@ -55,7 +55,7 @@ namespace AutoDocMcpServer.Clients
 
             builder.AppendLine("\nBased on the rules and data above, please generate the CSV report now.");
 
-            // Instrução para o Agente
+            // 6. The Next Steps
             builder.AppendLine("\n### NEXT STEP INSTRUCTION ###");
             builder.AppendLine("1. Show this clean CSV to the user in a code block.");
             builder.AppendLine($"2. Use the 'save_report' tool to save this RAW content as 'report_{variable.ProjectName}_{DateTime.Now:yyyyMMdd}_{Guid.CreateVersion7().ToString("N")}.csv' in the pre-configured directory.");
