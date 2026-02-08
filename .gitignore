@@ -68,6 +68,9 @@ ScaffoldingReadMe.txt
 # MCP server json settings
 server.json
 
+# MCP repository local tests
+.mcp.json
+
 # StyleCop
 StyleCopReport.xml
 
