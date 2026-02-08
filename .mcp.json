@@ -1,0 +1,24 @@
+{
+  "inputs": [],
+  "servers": {
+    "AutoDocMCPServer": {
+      "type": "stdio",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "C:/Users/eduar/Desktop/Projects/C#/AutoDocMcpServer/AutoDocMcpServer/AutoDocMcpServer.csproj"
+      ],
+      "env": {
+        "REPOSITORY_PATH": "C:\\Users\\eduar\\Desktop\\DoroTech\\Nice Acesso\\Work\\nice-acesso-api",
+        "OWNER_EMAIL": "dudumoises2005@gmail.com",
+        "OWNER_NAME": "Eduardo Rezende",
+        "CULTURE": "pt-BR",
+        "OUTPUT_PATH": "C:\\Users\\eduar\\AutoDoc-NiceAcesso-Reports",
+        "REPORT_COLUMNS_TITLES": "Período de execução,Fase/Etapa,Atividade (Título),Descrição da atividade,Motivação  (Por que fez),Processo (Como fez),Resultado Alcançado,Participantes",
+        "RULES": "Analise apenas commits relevantes. Ignore merges ou outros commits sem sentido. Para a coluna de Fase/Etapa utilize: Desenvolvimento, Testes, Infraestrutura, Integração. Para coluna de Atividade (Título) resuma o título e utilize na cultura pré-definida. Para coluna de Participantes utilize o valor de OWNER_NAME. Seja breve, direto e objetivo no preenchimento dos dados",
+        "PROJECT_METADATA": "Sistema de controle de acesso desenvolvido em C# .NET 10 Web API com PostgreSQL para gerenciar acessos em condominios, empresas e instalações. Integração com equipamentos Nice (MG3000, Facial, Antena Veicular) via Nice SDK API."
+      }
+    }
+  }
+}
