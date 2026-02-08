@@ -24,10 +24,10 @@
 
     <!-- Set recommended package metadata -->
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageId>SampleMcpServer</PackageId>
+    <PackageId>AutoDocMcpServer</PackageId>
     <PackageVersion>0.1.0-beta</PackageVersion>
     <PackageTags>AI; MCP; server; stdio</PackageTags>
-    <Description>An MCP server using the MCP C# SDK.</Description>
+    <Description>AutoDoc is an MCP server of type stdio that automatically analyzes Git commits and generates structured daily CSV reports using the MCP C# SDK.</Description>
   </PropertyGroup>
 
   <!-- Include additional files for browsing the MCP server. -->
