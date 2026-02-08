@@ -1,14 +1,14 @@
 # AutoDoc MCP Server — AutoDoc
 
-AutoDoc is an MCP (Model/Message Control Protocol) server that runs as a stdio service and automatically analyzes Git commits to generate structured, daily CSV reports. It’s designed to produce concise activity reports from repository history, suitable for progress tracking, status reports, and automated documentation workflows.
+AutoDoc is an MCP: https://modelcontextprotocol.io/docs/getting-started/intro server that runs as a stdio service and automatically analyzes Git commits to generate structured, daily CSV reports. It’s designed to produce concise activity reports from repository history, suitable for progress tracking, status reports, and automated documentation workflows.
 
-**Core idea**: convert Git commit history into human-readable, business-oriented CSV reports by applying configurable rules and prompts. AutoDoc watches a repository location, extracts relevant commits, summarizes activities (title, description, motivation, process, results, participants), and saves repeatable reports to disk.
+**Core idea**: convert Git commit history into human-readable, business-oriented CSV reports by applying configurable rules and prompts. AutoDoc watches a repository location, extracts relevant commits, summarizes custom columns and saves reports to disk.
 
 **Key features**
-- Generates daily/weekly CSV reports from Git commit history.
+- Generates any date interval of CSV reports from Git commit history.
 - Runs as an MCP stdio server (suitable for integrations in editors and automation pipelines).
 - Configurable via environment variables (repository path, owner, culture, output path, rules, column titles).
-- Designed for short, objective entries: Development, Tests, Infrastructure, Integration.
+- Designed for custom datas.
 
 Getting started
 ----------------
@@ -66,7 +66,7 @@ Example result printed by AutoDoc:
 ```
 Generating report: weekly (2026-02-02 – 2026-02-08)
 Processed 18 commits (filtered 5 noisy commits)
-Generated and saved: report_nice-acesso-api_20260208_repeat.csv to C:\Users\eduar\AutoDoc-NiceAcesso-Reports\
+Generated and saved: report_project-api_20260208_repeat.csv to C:\Users\eduar\AutoDoc-NiceAcesso-Reports\
 ```
 
 Sample CSV row (columns follow `REPORT_COLUMNS_TITLES`):
@@ -75,6 +75,7 @@ Sample CSV row (columns follow `REPORT_COLUMNS_TITLES`):
 
 Best practices
 --------------
+- Improve commits titles and descriptions for good context
 - Keep the local repository up to date and run AutoDoc against a clean working tree for accurate results.
 - Tune `RULES` to match your team's commit style and what you consider "relevant".
 - Use `REPORT_COLUMNS_TITLES` to adapt output to your internal report templates.
