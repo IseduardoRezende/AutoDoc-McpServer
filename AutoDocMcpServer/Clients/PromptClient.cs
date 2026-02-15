@@ -30,6 +30,7 @@ namespace AutoDocMcpServer.Clients
             builder.AppendLine($"- CSV Column Titles: {variable.ReportColumnsTitles}");
             builder.AppendLine("- CSV Formatting: Do NOT wrap values in double quotes (\") unless the value itself contains a comma. Keep it clean and readable.");
             builder.AppendLine("- Language: The entire report must be written in the specified Target Culture.");
+            builder.AppendLine($"- Date Formats: Use the date format strictly appropriate for {variable.Culture} (e.g., dd/MM/yyyy for pt-BR).");
             builder.AppendLine("- Format: Ensure the output is a valid CSV code block.");
             builder.AppendLine();
 
